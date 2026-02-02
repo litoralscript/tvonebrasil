@@ -9,16 +9,16 @@
   },
   "routes": [
     {
-      "src": "/(assets/.*)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(config/.*)",
-      "status": 403
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
       "src": "/admin/(.*)",
       "dest": "/admin/$1"
+    },
+    {
+      "src": "/config/(.*)",
+      "status": 403
     },
     {
       "src": "/(.*)",
